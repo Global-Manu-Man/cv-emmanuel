@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Sandoval | Cloud Architect & Backend Developer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Cloud Architect and Senior Software Engineer specialized in backend development, digital transformation, and enterprise solutions.">
+    <meta name="keywords" content="Cloud Architect, Backend Developer, AWS, Java, Software Engineer">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Emmanuel Sandoval | Cloud Architect & Backend Developer">
+    <meta property="og:description"
+        content="Experienced Cloud Architect and Senior Software Engineer with 6+ years in enterprise development.">
+
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.emmanuel.pakal.cloud/">
+    <meta property="og:title" content="Emmanuel Sandoval | Cloud Architect & Backend Developer">
+    <meta property="og:description"
+        content="Cloud Architect and Senior Software Engineer specialized in backend development, digital transformation, and enterprise solutions. Discover my experience, projects, and contact information.">
+    <meta property="og:image" content="https://www.emmanuel.pakal.cloud/assets/img/perfil.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.emmanuel.pakal.cloud/">
+    <meta name="twitter:title" content="Emmanuel Sandoval | Cloud Architect & Backend Developer">
+    <meta name="twitter:description"
+        content="Cloud Architect and Senior Software Engineer specialized in backend development, digital transformation, and enterprise solutions. Discover my experience, projects, and contact information.">
+    <meta name="twitter:image" content="https://www.emmanuel.pakal.cloud/assets/img/perfil.png">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/modern-design.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <!--==================== HEADER / NAVIGATION ====================-->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <span class="brand-text">Emmanuel</span>
+                </div>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+
+                    <!-- DESKTOP VERSION (Navbar) -->
+                    <!-- Coloca esto en la navbar, después de "Get in Touch" button -->
+                    <button class="theme-toggle" id="themeToggleDesktop" aria-label="Toggle dark mode"
+                        title="Toggle theme">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- MOBILE VERSION (Inside Menu) -->
+                    <!-- Coloca esto DENTRO del <ul class="nav-menu"> (como último <li> antes del cierre) -->
+                    <li class="nav-theme-item">
+                        <button class="theme-toggle-mobile" id="themeToggleMobile" aria-label="Toggle dark mode"
+                            title="Toggle theme">
+                            <svg class="theme-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                            <span class="theme-label">Dark Mode</span>
+                        </button>
+                    </li>
+                </ul>
+
+                <a href="#contact" class="nav-cta">Get in Touch</a>
+
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <!--==================== HOME SECTION ====================-->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Building Cloud <span class="gradient-text">Solutions</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Cloud Architect & Senior Software Engineer with 6+ years of expertise in enterprise development,
+                    digital transformation, and AWS solutions.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="uil uil-message"></i>
+                        Contact me
+                    </a>
+                    <a href="#" class="btn btn-secondary" download>
+                        <i class="uil uil-download-alt"></i>
+                        Download CV
+                    </a>
+                </div>
+
+                <!-- Scroll to Top Button -->
+                <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top" title="Volver arriba">
+                    <i class="uil uil-arrow-up"></i>
+                </button>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <!-- <span class="stat-number"></span> -->
+                        <span class="stat-label">6+ Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <!-- <span class="stat-number"></span> -->
+                        <span class="stat-label"> 7+ Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <!-- <span class="stat-number"></span> -->
+                        <span class="stat-label">4 Companies</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="gradient-circle circle-1"></div>
+                <div class="gradient-circle circle-2"></div>
+                <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/images_profiles/perfil-removebg-preview.png"
+                    alt="Emmanuel Sandoval" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ABOUT SECTION ====================-->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Cloud Architect and Senior Software Engineer with a proven track record of
+                        delivering enterprise-scale solutions. My expertise spans backend development, cloud
+                        architecture, and digital transformation.</p>
+                    <p>Currently at <strong>Citibank</strong> as a Digital Software Engineer, I've led critical projects
+                        including the Banamex-Citibank migration and architected microservices for major financial
+                        institutions.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="uil uil-check-circle"></i>
+                            <span>Expert in Java, Spring Boot, and Microservices</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="uil uil-check-circle"></i>
+                            <span>AWS Certified - Cloud Architecture & Solutions</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="uil uil-check-circle"></i>
+                            <span>Full-stack capabilities with React & Angular</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="uil uil-check-circle"></i>
+                            <span>Financial & Enterprise sector expertise</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!--==================== SKILLS SECTION ====================-->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills-grid">
+                <!-- Backend Skills -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="uil uil-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Spring Boot</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Microservices</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>RESTful APIs</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Docker</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Skills -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="uil uil-cloud"></i>
+                        <h3>AWS & Cloud</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>EC2</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>S3</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Lambda</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>RDS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>IAM</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="uil uil-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Angular</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS & Tailwind</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML5</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== EXPERIENCE SECTION ====================-->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Digital Software Engineer Sr Analyst</h3>
+                        <p class="company">Citibank</p>
+                        <p class="period">11/2024 - Present</p>
+                        <p class="description">Leading digital transformation initiatives and architecting scalable
+                            cloud solutions.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Digital Software Engineer Sr Analyst</h3>
+                        <p class="company">Banamex</p>
+                        <p class="period">07/2024 - 11/2024</p>
+                        <p class="description">Managed critical migration project and implemented microservices
+                            architecture.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Project Engineer</h3>
+                        <p class="company">HSBC</p>
+                        <p class="period">01/2021 - 03/2024</p>
+                        <p class="description">Architected enterprise solutions and led technical teams on complex
+                            projects.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Cloud Architect</h3>
+                        <p class="company">Pakal Technological Solutions</p>
+                        <p class="period">05/2023 - 07/2024</p>
+                        <p class="description">Designed and implemented AWS infrastructure for multiple enterprise
+                            clients.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <p class="company">BBVA</p>
+                        <p class="period">01/2018 - 01/2021</p>
+                        <p class="description">Developed microservices and RESTful APIs for banking applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== SERVICES SECTION ====================-->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Enterprise-grade backend solutions using Java, Spring Boot, and microservices architecture.
+                        Database design and RESTful API development.</p>
+                    <ul class="service-features">
+                        <li><i class="uil uil-check"></i> Java & Spring Boot</li>
+                        <li><i class="uil uil-check"></i> Microservices</li>
+                        <li><i class="uil uil-check"></i> RESTful APIs</li>
+                    </ul>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            <polyline points="8 14 12 18 16 14"></polyline>
+                            <line x1="12" y1="12" x2="12" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Cloud Architecture</h3>
+                    <p>AWS solutions including infrastructure design, cloud migration, and optimization. EC2, S3,
+                        Lambda, RDS, and IAM management.</p>
+                    <ul class="service-features">
+                        <li><i class="uil uil-check"></i> AWS Infrastructure</li>
+                        <li><i class="uil uil-check"></i> Cloud Migration</li>
+                        <li><i class="uil uil-check"></i> Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Full-Stack Solutions</h3>
+                    <p>Complete web applications combining React/Angular frontends with robust backend systems and cloud
+                        infrastructure.</p>
+                    <ul class="service-features">
+                        <li><i class="uil uil-check"></i> React/Angular</li>
+                        <li><i class="uil uil-check"></i> Full Integration</li>
+                        <li><i class="uil uil-check"></i> Scalable Systems</li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+    <!--==================== PROJECTS SECTION ====================-->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <!-- Keen Slider Container -->
+            <div class="keen-slider" id="projectsCarousel">
+
+                <!-- Project 1: Architecture & Interior Design -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-2.jpg"
+                            alt="IPSA Ingeniería y Proyecto - Architecture">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>IPSA Ingeniería y Proyecto</h3>
+                        <p>Commercial & Interior Design - Corporate office renovation with modern aesthetics and
+                            sustainable solutions for enterprise spaces.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Mechanical Solutions -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-3.jpg"
+                            alt="Proyectos Mecánicos LA - Industrial Solutions">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Proyectos Mecánicos LA</h3>
+                        <p>Industrial Machinery & Installation - Design, construction, and maintenance of mechanical and
+                            electromechanical systems for Mexican territory.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Event Management Platform -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-4.jpg"
+                            alt="Penta Events - Event Booking Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Penta Events Platform</h3>
+                        <p>Event Booking & Management System - Web platform for discovering and booking event venues,
+                            catering services, and event planners.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Contact Lens Distribution -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-5.jpg"
+                            alt="Loop Lentillas - E-commerce">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Loop Lentillas</h3>
+                        <p>Daily Contact Lens E-commerce - Responsive online platform for daily contact lens
+                            distribution with product recommendations and user support.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: Electrical Solutions -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-6.jpg"
+                            alt="HidroElectrik - Electrical Infrastructure">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HidroElectrik</h3>
+                        <p>Electrical Infrastructure & Solutions - High-quality electrical services with 15+ years of
+                            expertise in infrastructure and installation systems.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6: Local Business Directory -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-7.jpg"
+                            alt="Locality - Local Business Directory">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Locality Directory</h3>
+                        <p>Local Business Discovery Platform - Web and mobile platform to find all local businesses by
+                            category, location, and specialty services.</p>
+                    </div>
+                </div>
+
+                <!-- Project 7: Equipment & Lift Maintenance -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-8.jpg"
+                            alt="Rona Montacargas - Equipment Maintenance">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Rona Montacargas</h3>
+                        <p>Equipment Repair & Maintenance Services - Specialized in forklift and hydraulic equipment
+                            repair with professional certification and 24/7 support.</p>
+                    </div>
+                </div>
+
+                <!-- Project 8: Digital Marketing Agency -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-9.jpg"
+                            alt="Avatar Digital Marketing - Marketing Strategy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Avatar Digital Marketing</h3>
+                        <p>Digital Marketing Strategy & Consulting - Comprehensive online marketing services including
+                            SEO, SEM, social media, and business growth planning.</p>
+                    </div>
+                </div>
+
+                <!-- Project 9: Gastronomic Tourism -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-10.jpg"
+                            alt="Sabor de mi Tierra - Food & Travel">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sabor de mi Tierra</h3>
+                        <p>Gastronomic Tourism Portal - Culinary travel guide featuring traditional Mexican cuisine,
+                            local food culture, and authentic dining experiences.</p>
+                    </div>
+                </div>
+
+                <!-- Project 10: Real Estate Construction -->
+                <div class="keen-slider__slide project-card">
+                    <div class="project-image">
+                        <img src="https://pub-f8d0f90bfd294616aa2f72d6b2082104.r2.dev/projects/proyecto-11.jpg"
+                            alt="Palomo Construcciones - Real Estate Projects">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-sm">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Palomo Construcciones</h3>
+                        <p>Real Estate Development & Construction - Building custom residential and commercial projects
+                            with 40+ years of experience in architecture and construction.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="carousel-controls">
+                <button class="carousel-btn carousel-btn--prev" id="projectsPrev" aria-label="Previous slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-btn--next" id="projectsNext" aria-label="Next slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class="carousel-dots" id="projectsDots"></div>
+        </div>
+    </section>
+
+    <!--==================== TESTIMONIALS SECTION ====================-->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <!-- Keen Slider Container -->
+            <div class="keen-slider" id="testimonialsCarousel">
+
+                <!-- Testimonial 1 -->
+                <div class="keen-slider__slide testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Highly recommended. There was a minimal delay in delivering the site, but they did exactly what
+                        we agreed upon. Professional work and excellent communication."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Horacio de la Garza</strong>
+                            <span>Marketing Director</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="keen-slider__slide testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "I highly recommend them because they are very professional in their work. They met all our
+                        expectations on time and delivered exactly what we wanted for our company's website."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Martha Cantú Vota</strong>
+                            <span>CEO, Hidro-Electrik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="keen-slider__slide testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Highly professional service. They met all our expectations on time and delivered the website
+                        for our company exactly as we wanted. Outstanding attention to detail."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Rona Montacargas</strong>
+                            <span>CEO, RONA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="keen-slider__slide testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The interaction with Emmanuel has been very cordial, and he explained the project scope to me
+                        in detail. The site was delivered within the agreed timeframe and looks great on all devices."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Mechanical Projects LA</strong>
+                            <span>CEO, Mecanicos LA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="keen-slider__slide testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                        <i class="uil uil-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The service was very attentive at all times. They answered my questions and also gave me
+                        suggestions to make my website perfect. Highly recommended service."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="uil uil-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Dajo Consultants</strong>
+                            <span>CEO, Dajo</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="testimonialsPrev" aria-label="Previous testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn" id="testimonialsNext" aria-label="Next testimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class="carousel-dots" id="testimonialsDots"></div>
+
+
+        </div>
+    </section>
+
+    <!--==================== CONTACT SECTION ====================-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Have a project in mind? Let's discuss how I can help you achieve your goals.</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <i class="uil uil-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a
+                                    href="mailto:sandoval.morales.emmanuel@gmail.com">sandoval.morales.emmanuel@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="uil uil-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+5215568711608">+52 (55) 6871-1608</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <i class="uil uil-map-pin"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>México City, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-section">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form" action="https://formspree.io/f/mqagpope"
+                            method="post">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="name">Nombre</label>
+                                    <input type="text" id="name" name="nombre" placeholder="Tu nombre completo"
+                                        required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+34 123 456 789">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="company">Empresa</label>
+                                    <input type="text" id="company" name="company" placeholder="Tu empresa">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="mensaje" rows="5"
+                                    placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="privacy" required>
+                                <label class="form-check-label" for="privacy">Acepto la <a href="#"
+                                        class="privacy-link">política de privacidad</a></label>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <span>Enviar mensaje</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Emmanuel Sandoval. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/globalmanuhman/" title="Facebook"><i class="uil uil-facebook"></i></a>
+                <a href="https://www.instagram.com/manuh_sandoval/" title="Instagram"><i class="uil uil-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/emmanuel-sandoval-global" title="LinkedIn"><i class="uil uil-linkedin"></i></a>
+                <a href="https://github.com/Global-Manu-Man" title="GitHub"><i class="uil uil-github"></i></a>
+                <a href="https://x.com/GlobalManuMan" title="Twitter"><i class="uil uil-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top" title="Volver arriba">
+        <i class="uil uil-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="assets/js/modern-design.js"></script>
+
+    <!-- Translations -->
+    <script src="assets/js/translations.js"></script>
+
+    <script src='https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.js'></script>
+</body>
+
+</html>
