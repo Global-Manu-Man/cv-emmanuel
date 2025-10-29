@@ -2773,3 +2773,271 @@ body.dark-mode .social-links a {
         transform: translateY(0);
     }
 }
+
+/* ==================== ABOUT SECTION - IMAGEN AL LADO DERECHO ==================== */
+
+/* Sección About */
+.about {
+    background: var(--light-bg);
+    padding: 5rem 0;
+    transition: background-color 0.3s ease;
+}
+
+/* IMPORTANTE: Grid de dos columnas - Texto a la IZQUIERDA, Imagen a la DERECHA */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% izquierda, 50% derecha */
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Columna IZQUIERDA - Texto */
+.about-text {
+    grid-column: 1; /* Primera columna */
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+/* Highlights */
+.about-highlights {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 102, 255, 0.05);
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--primary-color);
+    transition: all 0.3s ease;
+    animation: slideInLeft 0.6s ease backwards;
+}
+
+.highlight:hover {
+    transform: translateX(5px);
+    background: rgba(0, 102, 255, 0.08);
+}
+
+.highlight:nth-child(1) { animation-delay: 0.1s; }
+.highlight:nth-child(2) { animation-delay: 0.2s; }
+.highlight:nth-child(3) { animation-delay: 0.3s; }
+.highlight:nth-child(4) { animation-delay: 0.4s; }
+
+.highlight i {
+    color: var(--success-color);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.highlight span {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+/* ==================== COLUMNA DERECHA - IMAGEN ==================== */
+.about-image {
+    grid-column: 2; /* Segunda columna - LADO DERECHO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    min-height: 400px;
+}
+
+/* Imagen principal */
+.about-image img,
+.about-image .about-profile-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 
+        0 10px 30px rgba(0, 102, 255, 0.2),
+        0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 1rem;
+    border: 3px solid rgba(0, 102, 255, 0.1);
+}
+
+/* Efecto hover */
+.about-image img:hover,
+.about-image .about-profile-img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 102, 255, 0.3),
+        0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Círculo decorativo detrás */
+.about-image::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 212, 255, 0.1));
+    border-radius: 50%;
+    z-index: 1;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+/* ==================== DARK MODE ==================== */
+body.dark-mode .about {
+    background: #1a1a2e;
+}
+
+body.dark-mode .about-text p {
+    color: #b0b0b0;
+}
+
+body.dark-mode .highlight {
+    background: rgba(0, 102, 255, 0.15);
+    border-left-color: #0066ff;
+}
+
+body.dark-mode .highlight:hover {
+    background: rgba(0, 102, 255, 0.25);
+}
+
+body.dark-mode .highlight span {
+    color: #ffffff;
+}
+
+/* Imagen en dark mode con efecto GLOW */
+body.dark-mode .about-image img,
+body.dark-mode .about-image .about-profile-img {
+    background: #0f0f1e;
+    border-color: rgba(0, 102, 255, 0.3);
+    box-shadow: 
+        0 10px 30px rgba(0, 102, 255, 0.4),
+        0 5px 15px rgba(0, 212, 255, 0.2),
+        inset 0 0 20px rgba(0, 102, 255, 0.1);
+}
+
+body.dark-mode .about-image img:hover,
+body.dark-mode .about-image .about-profile-img:hover {
+    box-shadow: 
+        0 20px 40px rgba(0, 102, 255, 0.5),
+        0 10px 20px rgba(0, 212, 255, 0.3),
+        inset 0 0 30px rgba(0, 102, 255, 0.2);
+    border-color: rgba(0, 102, 255, 0.5);
+}
+
+body.dark-mode .about-image::before {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.2), rgba(0, 212, 255, 0.2));
+}
+
+/* ==================== ANIMACIONES ==================== */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Tablets y menores */
+@media (max-width: 992px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 3rem;
+    }
+    
+    .about-text {
+        grid-column: 1;
+        order: 2; /* Texto segundo */
+    }
+    
+    .about-image {
+        grid-column: 1;
+        order: 1; /* Imagen primero */
+    }
+    
+    .about-image img,
+    .about-image .about-profile-img {
+        max-width: 300px;
+    }
+    
+    .about-image::before {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+    .about {
+        padding: 3rem 0;
+    }
+    
+    .about-content {
+        gap: 2rem;
+    }
+    
+    .about-image {
+        padding: 1rem;
+        min-height: 300px;
+    }
+    
+    .about-image img,
+    .about-image .about-profile-img {
+        max-width: 250px;
+    }
+    
+    .about-image::before {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+    }
+    
+    .highlight {
+        padding: 0.8rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .about-image img,
+    .about-image .about-profile-img {
+        max-width: 200px;
+        padding: 0.5rem;
+    }
+    
+    .about-image::before {
+        width: 180px;
+        height: 180px;
+    }
+}
